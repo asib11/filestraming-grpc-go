@@ -49,7 +49,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### 1. Clone the repository
 
