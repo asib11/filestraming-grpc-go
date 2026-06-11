@@ -1,10 +1,10 @@
-# 📁 filestraming-grpc-go
+# Filestraming using gRPC-go
 
 A file streaming service built with **gRPC** and **Go**, demonstrating how to transfer files in chunks using gRPC's client-side streaming. This project is a practical example of using Protocol Buffers (protobuf) and the gRPC framework to build efficient, high-performance file transfer between a client and server.
 
 ---
 
-## 🚀 Features
+## Features
 
 - File transfer using **gRPC client-side streaming**
 - Chunked file upload — handles files of any size
@@ -14,7 +14,7 @@ A file streaming service built with **gRPC** and **Go**, demonstrating how to tr
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 filestraming-grpc-go/
@@ -28,7 +28,7 @@ filestraming-grpc-go/
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 Make sure the following are installed on your system:
 
@@ -76,7 +76,7 @@ protoc --go_out=. --go_opt=paths=source_relative \
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 ### Start the Server
 
@@ -100,7 +100,7 @@ The client will read the target file, split it into chunks, and stream them to t
 
 ---
 
-## 📡 gRPC Service Definition
+## gRPC Service Definition
 
 The service is defined in `proto/` using proto3 syntax. The core structure follows the client-streaming RPC pattern:
 
@@ -126,7 +126,7 @@ The client streams multiple `FileUploadRequest` messages (each carrying a chunk 
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Version |
 |---|---|
@@ -136,7 +136,7 @@ The client streams multiple `FileUploadRequest` messages (each carrying a chunk 
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. **Client** opens a local file and reads it in fixed-size chunks.
 2. Each chunk is wrapped in a `FileUploadRequest` message and sent to the server over a gRPC stream.
@@ -154,7 +154,7 @@ Client                          Server
 
 ---
 
-## 📚 Learn More
+## Learn More
 
 - [gRPC Go Quick Start](https://grpc.io/docs/languages/go/quickstart/)
 - [Protocol Buffers (proto3) Guide](https://protobuf.dev/programming-guides/proto3/)
@@ -162,6 +162,6 @@ Client                          Server
 
 ---
 
-## 👤 Author
+## Author
 
 **asib11** — [github.com/asib11](https://github.com/asib11)
