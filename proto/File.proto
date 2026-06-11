@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "fileStreaming/proto";
+
+message UploadRequest {
+    string FilePath = 1;
+    bytes chunks = 2;
+}
+
+message UploadResponse {
+    int64 FileSize = 1;
+    string Message = 2;
+}
+
+service FileService {
+    rpc UploadFile (stream UploadRequest) returns (UploadResponse);
+}
