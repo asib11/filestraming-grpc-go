@@ -1,1 +1,0 @@
-# filestraming-grpc-go
