@@ -162,6 +162,4 @@ Client                          Server
 
 ---
 
-## Author
 
-**asib11** — [github.com/asib11](https://github.com/asib11)
